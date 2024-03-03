@@ -1,0 +1,38 @@
+[
+    {
+        "title": "JUMPING LETTERS",
+        "description": "Simple text animation when hovered and clicked.",
+        "link": "./JUMPING LETTERS"
+    },
+
+    {
+        "title": "BELL",
+        "description": "Image animation when clicked and data collection.",
+        "link": "./BELL"
+    },
+
+    {
+        "title": "SCROLL INDICATOR",
+        "description": "Element scroll indicator.",
+        "link": "./SCROLL INDICATOR"
+    },
+
+    {
+        "title": "COLOR SWITCH",
+        "description": "Animation and color switching interaction between elements.",
+        "link": "./COLOR SWITCH"
+    },
+
+    {
+        "title": "CALCULATOR",
+        "description": "Simple calculator program.",
+        "link": "./CALCULATOR"
+    },
+
+    {
+        "title": "PHOTERSY",
+        "description": "Photo Gallery.",
+        "link": "./PHOTERSY"
+    }
+
+]

@@ -1,0 +1,66 @@
+#buttons {
+    position: center;
+    left: 0;
+    top: 0;
+}
+
+body {
+    background-image: url('/ASSETS/IMAGES/background.gif'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+.day {
+    display: block;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 100px;
+    width: 100px;
+    height: 50px;
+    border-radius: 15%;
+    border: 0;
+    background-color: #7B965C; 
+    color: #FFFFFF;
+}
+
+.day:hover {
+    transform: scale(1.1);
+    background-color: #6A7F32; 
+}
+
+.box {
+    position:absolute;
+    right: 10%;
+    top: 50px;
+    width: 300px;
+    height: 300px;
+    margin-right: 80px;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    background-color: #664228; 
+}
+
+@keyframes slideUp {
+    to {
+        top: -600px;
+        opacity: 0;
+    }
+}
+
+@keyframes slideDown {
+    to { top: 200px }
+    0% {opacity: 0; }
+    100% {opacity: 1; }
+}
+
+#monday { background-color: #5D7E36; } /* Grass */
+#tuesday { background-color: #664228; } /* Dirt */
+#wednesday { background-color: #3B3B3B; } /* Stone */
+#thursday { background-color: #9AA1A1; } /* Iron */
+#friday { background-color: #FFAA00; } /* Gold */
+#saturday { background-color: #00FFFF; } /* Diamond */
+#sunday { background-color: #5B2B00; } /* Wood */

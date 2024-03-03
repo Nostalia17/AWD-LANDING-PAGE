@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../IMAGES/BACKGROUND.gif');
+    min-height: 100vh;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    .title {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color:  #49684C;
+        margin-bottom: 2rem;
+        text-align: center;
+        animation: fadeIn 2s ease-in-out; /* Add fade-in animation */
+        transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add transition for color and transform */
+    }
+    
+    .title:hover {
+        color: #A8D8A7; /* Change color on hover */
+        transform: scale(1.1); /* Scale up on hover */
+    }   
+
+    .cardHolder {
+        display: grid;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 1rem;
+    
+        .card {
+            border-radius: 15px;
+            padding: 1rem;
+            background: linear-gradient(
+                45deg,
+                #596854 0%,
+                #CC9A52 42%,
+                #7F803E 42%,
+                #596854 45%,
+                #CC9A52 45%,
+                #7F803E  48%,
+                #596854 48%,
+                #596854 51%,
+                #CC9A52 51%,
+                #CC9A52 54%,
+                #7F803E 54%,
+                #7F803E 57%,
+                #7F803E 57%,
+                #7F803E 60%,
+                #596854 60%,
+                #596854 100%
+            );
+            background-size: 300%;
+            box-shadow: 2px 3px 5px white;
+            transition: transform 0.3s ease-in-out; /* Change transition to transform */
+            transform: skew(-10deg);
+    
+            .cardTitle {
+                color: white;
+                transition: 0.3s ease-in-out;
+                font-size: 1.5rem;
+                font-weight: 500;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-bottom: 1.5rem;
+                text-shadow: 2px 2px 4px #000;
+            }
+    
+            &:hover {
+                transform: skew(-10deg) scale(1.05); /* Add scale to transform on hover */
+                box-shadow: 3px 5px 5px #CC9A52;
+                background-position: 100%;
+    
+                .cardTitle {
+                    font-family: garamond;
+                    color: #AD794B;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+@keyframes colorChange {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}}

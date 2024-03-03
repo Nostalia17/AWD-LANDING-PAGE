@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ASSETS/STYLES/styles.css">
+    <title>Photersy</title>
+</head>
+<body>
+
+    <div class="home-section">
+        <h1>PHOTERSY</h1>
+        <p>Discover the beauty captured through the lens.</p>
+    </div>
+
+    <div class="gallery" id="imageGallery">
+        <img src="./ASSETS/IMAGES/v-j day.jpg" alt="Photo 1" onclick="showDescription('V-J Day in Times Square', 'V-J Day in Times Square is a photograph by Alfred Eisenstaedt that portrays a U.S. Navy sailor embracing and kissing a total stranger—a dental assistant—on Victory over Japan Day in New York City\'s Times Square on August 14, 1945.')">
+        <img src="./ASSETS/IMAGES/fallen.jpg" alt="Photo 2" onclick="showDescription('The Falling Soldier', 'The Falling Soldier is a black and white photograph by Robert Capa, claimed to have been taken on Saturday, September 5, 1936. It was said to depict the death of a Republican Iberian Federation of Libertarian Youth soldier, during the Battle of Cerro Muriano in the Spanish Civil War.')">
+        <img src="./ASSETS/IMAGES/migrant.webp" alt="Photo 6" onclick="showDescription('Migrant Mother', 'Migrant Mother is a photograph taken in 1936 in Nipomo, California by American photographer Dorothea Lange during her spell at the Resettlement Administration.')">
+        <img src="./ASSETS/IMAGES/iwojima.jpg" alt="Photo 4" onclick="showDescription('Raising the Flag on Iwo Jima', 'Raising the Flag on Iwo Jima is an iconic photograph of six United States Marines raising the U.S. flag atop Mount Suribachi during the Battle of Iwo Jima in the final stages of the Pacific War.')">
+        <img src="./ASSETS/IMAGES/legras.jpg" alt="Photo 5" onclick="showDescription('View from the Window at Le Gras', 'View from the Window at Le Gras is a heliographic image and the oldest surviving camera photograph. It was created by French inventor Nicéphore Niépce in 1826 in Saint-Loup-de-Varennes, France, and shows parts of the buildings and surrounding countryside of his estate, Le Gras, as seen from a high window.')">
+        <img src="./ASSETS/IMAGES/lunch atop.jpg" alt="Photo 7" onclick="showDescription('Lunch atop a Skyscraper', 'Lunch atop a Skyscraper is a black-and-white photograph taken on September 20, 1932, of eleven ironworkers sitting on a steel beam 850 feet above the ground during construction of the RCA Building in Manhattan, New York City. It was arranged as a publicity stunt, part of a campaign promoting the skyscraper.')">
+        <img src="./ASSETS/IMAGES/famine.webp" alt="Photo 3" onclick="showDescription('Famine in Somalia', 'A catastrophic combination of conflict, high food prices and drought has left more than 11 million people in desperate need.')">
+        <img src="./ASSETS/IMAGES/roaringlion.jpg" alt="Photo 8" onclick="showDescription('The Roaring Lion', 'The Roaring Lion is a black and white photographic portrait of a 67-year-old Winston Churchill as Prime Minister of the United Kingdom. The portrait was taken in 1941 by Armenian-Canadian photographer Yousuf Karsh in the Centre Block on Parliament Hill in Ottawa, Ontario, Canada.')">
+        <img src="./ASSETS/IMAGES/steerage.jpg" alt="Photo 9" onclick="showDescription('The Steerage', 'The Steerage is a black and white photograph taken by Alfred Stieglitz in 1907. It has been hailed by some critics as one of the greatest photographs of all time because it captures in a single image both a formative document of its time and one of the first works of artistic modernism.')">
+    </div>
+
+    <div id="descriptionContainer" class="description-container">
+        <div id="descriptionText" class="description">
+            <h2>Title</h2>
+            <p>Description</p>
+        </div>
+        <span class="close" onclick="hideDescription()">&times;</span>
+    </div>
+
+    <script src="ASSETS/JS/script.js"></script>
+</body>
+</html>
